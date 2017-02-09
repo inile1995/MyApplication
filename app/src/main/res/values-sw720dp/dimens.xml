@@ -3,8 +3,8 @@
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-<!--หน้าจอ 7 นิ้ว-->
-        <dimen name="h1">35sp</dimen>
-        <dimen name="h2">20sp</dimen>
+    <!--หน้าจอ 10 นิ้ว-->
+        <dimen name="h1">100sp</dimen>
+        <dimen name="h2">60sp</dimen>
 
 </resources>

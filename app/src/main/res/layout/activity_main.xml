@@ -13,11 +13,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="สวัสดี เอนดอย!"
-        android:textColor="@color/colorPrimary"
+        android:text="@string/txtTitle"
         tools:textColor="@color/colorAccent"
-        android:textStyle="normal|bold"
-        tools:textSize="36sp"
-        android:textSize="?android:attr/listPreferredItemHeightLarge"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtTitle"
+        android:textSize="@dimen/h1"
+        android:textStyle="normal|bold" />
 </RelativeLayout>
