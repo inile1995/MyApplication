@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,12 +41,28 @@ public class MainActivity extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titleStrings, shortStrings);
         listView.setAdapter(myAdapter);
 
+        // Active when click List View ลิ้งไปหน้า detail เมื่อคลิกเลือกไอเทม
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               Intent intent = new Intent(MainActivity.this, Detail.class);// ส่งข้อมูลจากหน้า Detail ไปหน้า Mainโดย put ข้อมูลไป 3 ค่า
+                intent.putExtra("Title",titleStrings[position]);
+                intent.putExtra("Detail",detailStrings[position]);
+                intent.putExtra("Image", ints[position]);
+                startActivity(intent);
+
+            } // เมื่อมีการคลิกข้อมูลตำแหน่งใดจะเก็บข้อมูลจากการคลิก
+        });
+
     } //Main Method onCreate
 
     public void onClickMoreInfo(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://www.dlt.go.th/th/dlt-knowledge/view.php?_did=111"));
         startActivity(intent);
+
+
+
     }
 
 }
