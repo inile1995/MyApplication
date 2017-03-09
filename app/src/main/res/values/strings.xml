@@ -5,5 +5,12 @@
     <string name="MoreInfo">More Info</string>
     <string name="aboutMe">About Me</string>
 
+    <string name="RAR">
+        ชื่่อ : อภิรุจ ศรีนวลปาน \n
+        รหัสนักศึกษา : 5711020660058 \n
+        หลักสูตร : วิทยาการคอมพิวเตอร์ \n
+        FACEBOOK : https://www.facebook.com/NileAphiruj.Snp
+
+    </string>
 
 </resources>
