@@ -52,10 +52,20 @@
                 android:id="@+id/txtAboutScroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
                 android:onClick="onClickFacebook"
                 android:text="@string/RAR"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtTell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/tell" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
